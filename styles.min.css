@@ -3,6 +3,11 @@ p {
   margin: 0;
   padding: 0;
 }
+.menu ul li a,
+.menu-footer ul li a {
+  text-decoration: none;
+  transition: color 1s;
+}
 body {
   font-family: Poppins, sans-serif;
   background-color: #191919;
@@ -67,9 +72,7 @@ img {
   margin-right: 20px;
 }
 .menu ul li a {
-  text-decoration: none;
   color: #a7a7a7;
-  transition: color 1s;
   font-size: 20px;
 }
 .menu ul li a:hover {
@@ -86,6 +89,7 @@ img {
 #testimonial {
   margin: 100px 0;
 }
+.first-infos-footer,
 .info-presentation {
   display: flex;
   justify-content: space-between;
@@ -243,6 +247,11 @@ img {
   border-radius: 10px;
   margin-top: 20px;
 }
+.info-contact,
+.submit-form {
+  align-items: center;
+  display: flex;
+}
 .name-testimonial {
   font-size: 20px;
   font-weight: 700;
@@ -275,8 +284,6 @@ img {
   margin: 50px 0;
 }
 .info-contact {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 input[type="email"],
@@ -307,8 +314,6 @@ textarea {
   height: 100%;
 }
 .submit-form {
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 30px;
@@ -326,6 +331,36 @@ input[type="submit"] {
   font-size: 22px;
   color: #fff;
   text-align: center;
+}
+.cellphone-footer,
+.copyright,
+.email-footer,
+.menu-footer ul li a {
+  font-size: 16px;
+  color: #a7a7a7;
+}
+footer {
+  margin: 50px;
+}
+.container-right-footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.second-infos-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.menu-footer ul {
+  display: flex;
+}
+.menu-footer ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.menu-footer ul li a:hover {
+  color: #e500ce;
 }
 @media screen and (max-width: 1200px) {
   .menu {
@@ -345,6 +380,9 @@ input[type="submit"] {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
+  .container-right-footer,
+  .first-infos-footer,
+  .info-presentation,
   .mobile-menu-open ul {
     flex-direction: column;
   }
@@ -353,5 +391,34 @@ input[type="submit"] {
   }
   .mobile-menu-open a {
     color: #fff;
+  }
+  #presentation {
+    margin: 20px 0;
+  }
+  .info-presentation h1 {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .container-icons,
+  .footer-project {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .info-projects {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .card-project {
+    max-width: 400px;
+  }
+  .second-infos-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
